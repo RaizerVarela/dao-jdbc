@@ -90,7 +90,7 @@ public class SellerDaoJDBC implements SellerDao{
 			int rows = st.executeUpdate();
 			
 			if(rows == 0) {
-				throw new SQLException("ID not found");
+				throw new SQLException("ID not found!");
 			}
 		} catch(SQLException e) {
 			throw new DbException(e.getMessage());
